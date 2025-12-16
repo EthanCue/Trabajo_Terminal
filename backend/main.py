@@ -132,7 +132,7 @@ async def post_recomendar(request: DescripcionRequest):
     distancias, indices = knn.kneighbors(vector_usuario, n_neighbors=15)
     
     # 4. Reglas de Negocio
-    UMBRAL_MINIMO = 0.50  # Umbral
+    UMBRAL_MINIMO = 0.80  # Umbral
     MAX_RESULTADOS = 15   # Límite amplio para la paginación
     recomendaciones = []
     
